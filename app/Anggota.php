@@ -4,15 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Buku_model extends Model
+class Anggota extends Model
 {
-    protected $table = "buku";
+    protected $table = "anggota";
     protected $primaryKey = "id";
     protected $fillable = [
-        'judul',
-        'penerbit',
-        'pengarang',
-        'foto',
+        'nama_anggota',
+        'alamat',
+        'telp',
     ];
 
     public $timestamps = false;
